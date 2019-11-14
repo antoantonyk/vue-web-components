@@ -5,11 +5,13 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:components": "npm run build -- --target wc-async --name poc src/components/*.vue",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.3.2",
+    "jquery": "^3.4.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {
